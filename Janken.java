@@ -16,8 +16,8 @@ class Janken{
         System.out.println(b + "さんの勝ちです");
       }
     }
-    static int pon(String Person){
-      System.out.println(Person + "さんの数字を入力してください。グーが0、チョキが1、パーが2です。");
+    static int pon(String person){
+      System.out.println(person + "さんの数字を入力してください。グーが0、チョキが1、パーが2です。");
       Scanner scan = new Scanner(System.in);
       int hand = scan.nextInt();
       while(hand !=0 && hand !=1 && hand !=2){
@@ -25,7 +25,7 @@ class Janken{
         hand = scan.nextInt();
       }
       String[] HandMark = {"グー","チョキ","パー"};
-      System.out.println(Person + "さんの出した手は" + HandMark[hand] + "ですね");
+      System.out.println(person + "さんの出した手は" + HandMark[hand] + "ですね");
       return hand;
     }
 }
